@@ -104,7 +104,7 @@ action :reconfigure do
     end
 
     execute "#{ingredient_package_name}-reconfigure" do
-      command "#{ingredient_ctl_command} reconfigure"
+      command "#{ingredient_ctl_command} reconfigure --accept-license"
     end
   end
 end
